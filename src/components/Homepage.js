@@ -1,30 +1,91 @@
 import React from 'react';
 import homepic from '../assets/Block6.jpg';
 import logo from '../assets/logo.png';
+import D from '../assets/Deluxe.jpg';
+import V from '../assets/Vip.jpg';
 
 function Homepage() {
   return (
     <>
-      <section className='header'>
-        <header>
-          <div className='container flxe1'><img src={logo} className='logo-img' alt='logo image' />
-            <nav class="navbar flex1">
-              <ul className='nav-menu'>
-               <a href="#Home">Home</a> 
-               <a href="#about">About us</a> 
-               <a href="#contact">Contact us</a> 
-               <a href="#bookings">Bookings</a> 
-               <a href="#Login">Login</a> 
-               <a href="#Register">Register</a> 
-              </ul>
-            </nav>
-          </div>
-        </header>
-      </section>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+      <header className='header'>
+        <div className='container flxe1'>
+          <img src={logo} className='logo-img' alt='logo image' />
+          <nav className="navbar flex1">
+            <ul className='nav-menu'>
+              <a href="#Home">Home</a> 
+              <a href="#about">About us</a> 
+              <a href="#contact">Contact us</a> 
+              <a href="#bookings">Bookings</a> 
+              <a href="#Login">Login</a> 
+              <a href="#Register">Register</a> 
+            </ul>
+          </nav>
+        </div>
+      </header>
     
     <img src={homepic} className='home-img' alt="home image" />
-    <h1>Mphongola Hotel</h1>
-    <section class="room wrapper2 top" id="room">
+
+    <section className="offer mtop" id="services">
+      <div className="container">
+        <div className="heading">
+          <h5>Check out Our Rooms </h5>
+        </div>
+        
+        <div className="content grid2 mtop">
+          <div className="box flex">
+            <div className="left">
+              <img src={D} alt="" />
+            </div>
+            <div className="right">
+              <h4>Deluxe Room</h4>
+              <p> Just 12 private Deluxe rooms ensures a quiet, relaxing stay.</p>
+              <h5>From R1 995 Per Room Per Night</h5>
+              <button className="flex1"> <span>View</span> </button>
+            </div>
+          </div>
+          
+          <div className="box flex">
+            <div className="left">
+              <img src={V} alt="" />
+            </div>
+            <div className="right">
+              <h4>VIP Room</h4>
+              <p> Exclusive with only 4 VIP Rooms. </p>
+              <h5>From R2 080 Per Room Per Night</h5>
+              <button className="flex1"> <span>View</span> </button>
+            </div>
+          </div>
+
+          <div className="box flex">
+            <div className="left">
+              <img src={V} alt="" />
+            </div>
+            <div className="right">
+              <h4>Luxury Room</h4>
+              <p> Just 35 private luxury rooms ensures a quiet, relaxing stay. </p>
+              <h5>From R2 165 Per Room Per Night</h5>
+              <button className="flex1"> <span>View</span> </button>
+            </div>
+          </div>
+
+          <div className="box flex">
+            <div className="left">
+              <img src={V} alt="" />
+            </div>
+            <div className="right">
+              <h4>Luxury Suites</h4>
+              <p> Just 35 private luxury rooms ensures a quiet, relaxing stay. </p>
+              <h5>From R2 575 Per Room Per Night</h5>
+              <button className="flex1"> <span>View</span> </button>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    {/* <section class="room wrapper2 top" id="room">
     <div class="container">
       <div class="heading">
         <h5>OUR ROOMS</h5>
@@ -68,7 +129,7 @@ function Homepage() {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
 
     {/* Booking systems/process */}
     {/* <section class="home" id="home">
@@ -102,7 +163,7 @@ function Homepage() {
       </div>
     </div>
   </section> */}
-
+  </body>
     </>
   )
 }
