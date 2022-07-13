@@ -2,29 +2,46 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: #8CCCF0;
 }
 
 .logo-img {
-  height: 65px;
-  justify-content: left;
   padding: 5px;
-  z-index: 1;
+  width: 100px;
 }
-
-.home-img {
-  height: 1024px;
-  width: 52cm;
+.main-container {
+  background-image: url("./assets/Block6.jpg");
+  padding: 10px;
+  height: 40cm;
   position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   z-index: 1;
+  
 }
-
+.motto {
+  color: white;
+}
+.motto h3 {
+  position: relative;
+  width: 860px;
+  height: 178px;
+  left: 39px;
+  padding-top: 60%;
+  padding-left: 60px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  border-radius: nullpx;
+}
 .nav-menu {
   padding: 5;
   display: flex;
   justify-content: right;
   align-items: center;
   z-index: 2;
+  
 }
 
 header ul {
@@ -54,3 +71,146 @@ a {
   transition: 0.5s;
 }
 
+.heading {
+  text-align: center;
+}
+.heading h1 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: black;
+  padding-top: 20px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+p {
+  line-height: 30px;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.about .right {
+  position: relative;
+}
+
+.abt-img {
+  justify-content: right;
+}
+
+
+
+.blog .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blog .box {
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+  transition: 0.5s;
+}
+
+.blog .box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.blog .text {
+  padding: 20px;
+}
+
+.blog img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blog .img {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog span {
+  position: absolute;
+  top: -3%;
+  left: -12%;
+  z-index: 1;
+  color: white;
+  background: #CC8C18;
+  padding: 20px 50px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+}
+
+.blog .box h3 {
+  font-size: 20px;
+}
+
+.blog .box i {
+  margin-right: 10px;
+  color: #CC8C18;
+}
+
+.blog .box i label {
+  color: black;
+}
+
+.blog .box h3 {
+  margin: 15px 0;
+}
+
+.blog a {
+  color: #CC8C18;
+  font-size: 15px;
+}
+
+
+
+footer {
+  background: black;
+  color: white;
+  padding: 0px;
+}
+
+footer .grid {
+  grid-template-columns: repeat(4, 2fr);
+}
+
+footer .content h2 {
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+footer li {
+  margin-bottom: 15px;
+  opacity: 0.75;
+}
+
+footer li i {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+footer .content h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+footer .content {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.map iframe {
+  width: 100%;
+}
