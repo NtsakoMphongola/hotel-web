@@ -10,12 +10,11 @@
 }
 .main-container {
   background-image: url("./assets/Block6.jpg");
-  padding: 10px;
-  height: 40cm;
+  height: 98rem;
+  width: 120rem;
   position: relative;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   z-index: 1;
   
 }
@@ -81,34 +80,80 @@ a {
   padding-top: 20px;
 }
 
-.top {
-  margin-top: 80px;
+.page-top {
+  margin-top: 0;
+  background: #8CCCF0;
 }
 
 .mtop {
-  margin-top: 40px;
+  margin-top:0;
 }
 
+.heading h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  margin: 15px;
+  padding: 14px;
+  box-shadow: 5px;
+}
+.offer img {
+  width: 90%;
+  height: 70%;
+  position: relative;
+}
+.offer .right {
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 0 0 3px rgb(0 0 0 / 5%);
+}
+.offer .content h4 {
+  font-size: 20px;
+}
+.offer .content h5 {
+  margin-bottom: 10px;
+}
+.offer .box {
+  transition: 0.5s;
+}
+.offer .box:hover {
+  transform: translateY(-10px);
+} 
+
 .left, .right {
-  width: 50%;
+  position: relative;
+  width: 60%;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .left {
+  padding: 20px;
 }
 
 p {
   line-height: 30px;
-  color: black;
   margin-bottom: 20px;
   font-size: 15px;
 }
-
+.about {
+  position: relative;
+}
 .about .right {
   position: relative;
 }
 
 .abt-img {
-  justify-content: right;
+  position: relative;
+  flex-direction: column-reverse;
+  padding-top: 15px;
+  right: -1200px;
+  top: -650px;
+  width: 30%;
 }
-
-
 
 .blog .grid {
   grid-template-columns: repeat(3, 1fr);

@@ -21,7 +21,7 @@ function Homepage() {
     <section className='main-container'>
       <header className='header'>
         <div className='container flxe1'>
-          <img src={logoPic} className='logo-img' alt='logo image' />
+          <img src={logoPic} className='logo-img' alt='logo' />
           <nav className="navbar flex1">
             <ul className='nav-menu'>
               <a href="#Home">Home</a> 
@@ -38,15 +38,11 @@ function Homepage() {
         </div>
       </header>
     </section>
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-      
-    
-    
-
+    <body className='page-top' data-spy="scroll" data-target=".navbar-fixed-top">
       <section className="offer mtop" id="services">
         <div className="container">
           <div className="heading">
-            <h5>Check out Our Rooms </h5>
+            <h1>Check out Our Rooms </h1>
           </div>
           
           <div className="content grid2 mtop">
@@ -139,18 +135,19 @@ function Homepage() {
               <br></br><br></br>
               <b>#celebratinglife</b>
             </p>
+            
           </div>
-          <div className="right">
-            <img src={Ab1} alt="" className='abt-img' />
-          </div>
-          <div className="right">
-            <img src={Ab2} alt="" className='abt-img' />
-          </div>
+            <div className="abt">
+              <img src={Ab1} alt="" className='abt-img' />
+            </div>
+            <div className="abt">
+              <img src={Ab2} alt="" className='abt-img' />
+            </div>
+          
         </div>
       </div>
     </section>
-  
-  <hr></hr>
+    <hr></hr>
     <section classNAme="blog top" id="blog">
       <div className="container">
         <div className="heading">
@@ -189,7 +186,7 @@ function Homepage() {
               <span></span>
             </div>
             <div className="text">
-              <h3></h3>
+              <h3> </h3>
               <p>The breathtaking views of surrounding mountains are a spectacular. Rooms are spacious and elegant. 
                 The complementary wine and snacks hamper are a cherry on top. Loved it and would recommend for a getaway around Johannesburg 🙌</p>
             </div>
