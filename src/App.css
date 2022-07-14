@@ -16,7 +16,9 @@
   padding: 0;
   margin: 0;
   z-index: 1;
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 .motto {
   color: white;
@@ -73,11 +75,10 @@ a {
 .heading {
   text-align: center;
 }
-.heading h1 {
-  font-weight: 400;
-  letter-spacing: 5px;
-  color: black;
-  padding-top: 20px;
+
+.container {
+  max-width: 98%;
+  margin: auto;
 }
 
 .page-top {
@@ -120,8 +121,7 @@ a {
   transform: translateY(-10px);
 } 
 
-.left, .right {
-  position: relative;
+.left {
   width: 60%;
 }
 
@@ -142,9 +142,6 @@ p {
 .about {
   position: relative;
 }
-.about .right {
-  position: relative;
-}
 
 .abt-img {
   position: relative;
@@ -155,75 +152,46 @@ p {
   width: 30%;
 }
 
-.blog .grid {
+.review .grid {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.blog .box {
+.review .box {
   box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
   transition: 0.5s;
 }
 
-.blog .box:hover {
+.review .box:hover {
   transform: translateY(-10px);
   cursor: pointer;
 }
 
-.blog .text {
+.review .text {
   padding: 20px;
 }
 
-.blog img {
+.review img {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.blog .img {
+.review .img {
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
-.blog span {
-  position: absolute;
-  top: -3%;
-  left: -12%;
-  z-index: 1;
-  color: white;
-  background: #CC8C18;
-  padding: 20px 50px;
-  transform: rotate(-45deg);
-  font-size: 14px;
-}
-
-.blog .box h3 {
+.review .box h3 {
   font-size: 20px;
-}
-
-.blog .box i {
-  margin-right: 10px;
-  color: #CC8C18;
-}
-
-.blog .box i label {
-  color: black;
-}
-
-.blog .box h3 {
   margin: 15px 0;
 }
 
-.blog a {
-  color: #CC8C18;
-  font-size: 15px;
-}
 
-
-
-footer {
+footer  {
+  padding: 0px;
   background: black;
   color: white;
-  padding: 0px;
 }
 
 footer .grid {
@@ -232,12 +200,13 @@ footer .grid {
 
 footer .content h2 {
   margin-bottom: 20px;
-  font-size: 23px;
+  font-size: 24px;
 }
 
 footer li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   opacity: 0.75;
+  list-style: none;
 }
 
 footer li i {
@@ -253,9 +222,22 @@ footer .content h3 {
 
 footer .content {
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
-.map iframe {
-  width: 100%;
+
+.content .map {
+  float: right;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  top: -230px;
+  right: 9rem;
+  height: 0;
+  padding: 0;
+}
+.map img {
+  height: 250px;
+  width: 150%;
+  position: relative;
 }

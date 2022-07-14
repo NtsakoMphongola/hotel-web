@@ -1,0 +1,328 @@
+/* Global properties & Structure============ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #000;
+	border:0;
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:20px;
+	min-width:980px
+}
+.wrapper {
+	width:100%;
+	overflow:hidden;
+    /* background:  #8CCCF0; */
+}
+.main {
+	margin:0 auto;
+	width:960px;
+	padding:0 6px
+}
+.bg1 {
+    background: #8CCCF0;
+	/* background:url(../assets/Block6.jpg) top center repeat; */
+    height: 1440px;
+    width: 100%;
+    overflow: hidden;
+}
+.box {
+	background:#8CCCF0;
+	box-shadow:0 0 6px rgb(177, 17, 17);
+	position:relative;
+}
+a {
+	color:black;
+	text-decoration:none;
+	outline:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+h1 {
+	padding:40px 0 0 38px;
+	float:left;
+}
+h2 {
+	font-size:21px;
+	line-height:1.2em;
+	padding:6px 0 15px 0;
+	color:#fff;
+	letter-spacing:-1px;
+}
+h2 img {
+	margin-right:15px;
+	float:left
+}
+p {
+	padding-bottom:20px
+}
+
+#menu {
+	background:#fff;
+	padding:10px 2px;
+	height:39px;
+	margin-bottom:10px
+}
+#menu > li {
+	border-right:1px solid #f2f2f2;
+	float:left
+}
+#menu > li > .last {
+	border:0
+}
+#menu > li > a {
+	display:block;
+	padding:0 62px;
+	font-size:16px;
+	color:#12110f;
+	text-decoration:none;
+	line-height:39px
+}
+#menu > a:hover, #menu > .active > a {
+	color:#e7a50a
+}
+
+.box1 {
+	background:#fff;
+	padding:10px
+}
+.box1 h2 {
+	color:#12110f;
+	padding:7px 0 14px 0;
+    text-transform: uppercase;
+}
+.button1 {
+	display:inline-block;
+	background:#fff;
+	padding:0 25px;
+	color:#12110f;
+	line-height:29px;
+	position:relative;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	text-decoration:none
+}
+.button1 {
+	background:#12110f;
+	color:#fff;
+	padding:0 22px
+}
+
+.button1:hover {
+	background:#f3b21d
+}
+.kwicks-wrapper {
+	width:640px;
+	overflow:hidden
+}
+
+.pad_bot1 {
+	padding-bottom:10px
+}
+
+.pad {
+	padding:20px 0 39px 40px
+}
+.box1 .pad {
+	padding:20px 0 15px 30px
+}
+.color3 {
+	color:#000
+}
+
+footer {
+	padding: 4px 3px 4px 3px;
+	height:50px
+}
+
+#form1 {
+	width:240px;
+	float:right;
+	padding:30px;
+	background:#12110f
+}
+#form1 h2 {
+	padding:0 0 22px 0;
+	margin-top:-4px;
+	color:#fff
+}
+#form1 .right {
+	width:140px
+}
+#form1 .row {
+	height:30px;
+	line-height:22px
+}
+
+#form1 .input {
+	font:12px Arial, Helvetica, sans-serif;
+	color:#72716f;
+	background:none;
+	height:15px;
+	padding:3px 5px;
+	width:128px;
+	margin:0
+}
+#form1 textarea {
+	font:12px Arial, Helvetica, sans-serif;
+	color:#72716f;
+	background:none;
+	height:54px;
+	padding:3px 5px;
+	width:222px;
+	margin:0;
+	overflow:auto
+}
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {
+	display:none
+}
+/* -------------
+ * Inputs
+ * ------------- */
+.jqTransformInputWrapper {
+	border:1px solid #2a2824;
+	position:relative;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	float:right;
+	height:21px;
+	width:138px !important
+}
+.jqTransformTextarea {
+	border:1px solid #2a2824;
+	position:relative;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	height:64px;
+	width:100%;
+	margin-top:4px
+}
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {
+	position:relative;
+	float:right
+}
+.jqTransformSelectWrapper div {
+	font:12px Arial, Helvetica, sans-serif;
+	color:#72716f;
+	display:block;
+	position:relative;
+	height:21px;
+	line-height:21px;
+	overflow:hidden;
+	cursor:pointer;
+	border:1px solid #2a2824;
+	background:none;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px
+}
+.jqTransformSelectWrapper div span {
+	padding:0 0 0 5px;
+	display:block
+}
+
+.jqTransformSelectWrapper ul {
+	position:absolute;
+	top:24px;
+	left:0;
+	background:#12110f;
+	border:1px solid #2a2824;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	display:none;
+	z-index:10;
+	padding:5px 0;
+	height:50px;
+	overflow:auto
+}
+.jqTransformSelectWrapper ul a {
+	display:block;
+	padding:0 5px;
+	text-decoration:none;
+	line-height:20px
+}
+.jqTransformSelectWrapper ul a.selected {
+	color:#fff
+}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+	color:#fff;
+	background:#2a2824
+}
+#form1 .select1 .jqTransformSelectWrapper div, #form1 .select1 .jqTransformSelectWrapper ul {
+	width:138px !important
+}
+#form1 .select2 .jqTransformSelectWrapper div, #form1 .select2 .jqTransformSelectWrapper ul {
+	width:42px !important
+}
+#form1 .select2 {
+	float:right;
+	width:44px;
+	margin-left:4px
+}
+#form1 .button1 {
+	float:right;
+	margin-left:4px;
+	padding:0 19px
+}
+
+.col1, .col2, .col3, .cols {
+	float:left;
+}
+.col1 {
+	width:250px;
+}
+.col2 {
+	width:570px;
+}
+.col3 {
+	width:240px;
+}
+.cols {
+	width:78px;
+	padding-bottom:0
+}
+#page2 .box1 .pad {
+	padding:10px 0 15px 30px;
+}
+#page2 .box1 figure {
+	padding-top:1px
+}
+#page2 .box1 .pad_bot2 {
+	padding-bottom:28px;
+}
+#page3 .box1 .pad, #page4 .box1 .pad, #page5 .box1 .pad {
+	padding:10px 0 15px 30px;
+}
+#page3 .box1 figure, #page4 .box1 figure {
+	padding-top:1px
+}
+#page3 .line1, #page4 .line1 {
+	padding-bottom:10px
+}
+#page3 .line2 {
+	background:url(../assets/blue-exotic-hotel-189296.jpg) 280px 0 repeat-y;
+	padding-bottom:0;
+	padding-top:3px;
+}
+#page5 .line2 {
+	background:url(../assets/39721514_5k2cZtYHfolUp2Vyz5Rd5L6g_PB-jpxdH-jUDOzXUlM.jpg) 280px 0 repeat-y;
+	margin-top:6px;
+	padding:0
+}
+#page5 .line3 {
+	padding-top:4px;
+	padding-bottom:5px;
+}

@@ -106,12 +106,12 @@ function Homepage() {
 
         <div className="content flex  top">
           <div className="left">
-            <p>At Mphomgola Hotel we are passionate about professional, service-orientated hospitality. 
+            <p>At Mphongola Hotel we are passionate about professional, service-orientated hospitality. 
               This, along with our beautiful facilities and breathtaking natural surroundings, ensures 
-              that Mphomgola Hotel is the venue of choice for both the corporate and leisure markets.
+              that Mphongola Hotel is the venue of choice for both the corporate and leisure markets.
               <br></br>
               <br></br>
-              Mphomgola Hotel won the prestigious South African Grading Councils - Lilizela Tourism 
+              Mphongola Hotel won the prestigious South African Grading Councils - Lilizela Tourism 
               Award 2016, 2017 and 2019 for the 'Best 4-Star Hotel in South Africa' for: 'Setting the 
               benchmark in service excellence, contributing to the industry, investing in skills provision, 
               leading by example and for ensuring that each guest is given a world-class experience in Gauteng'.
@@ -137,18 +137,17 @@ function Homepage() {
             </p>
             
           </div>
-            <div className="abt">
-              <img src={Ab1} alt="" className='abt-img' />
+            {/* <div className="abt">
+              <img src={Ab1} alt="" className='abt-img' width='25%' />
             </div>
             <div className="abt">
               <img src={Ab2} alt="" className='abt-img' />
-            </div>
+            </div> */}
           
         </div>
       </div>
     </section>
-    <hr></hr>
-    <section classNAme="blog top" id="blog">
+    <section classNAme="review top" id="review">
       <div className="container">
         <div className="heading">
           <h3>REVIEW</h3>
@@ -158,7 +157,6 @@ function Homepage() {
           <div className="box">
             <div className="img">
               <img src={R4} alt="" />
-              <span></span>
             </div>
             <div className="text">
               <h3>Nthabi Mokhonoana</h3>
@@ -171,7 +169,6 @@ function Homepage() {
           <div className="box">
             <div className="img">
               <img src={R} alt="" />
-              <span></span>
             </div>
             <div className="text">
               <h3>Emmanuel Shayamom</h3>
@@ -183,7 +180,6 @@ function Homepage() {
           <div className="box">
             <div className="img">
               <img src={R2} alt="" />
-              <span></span>
             </div>
             <div className="text">
               <h3> </h3>
@@ -194,7 +190,6 @@ function Homepage() {
           <div className="box">
             <div className="img">
               <img src={R3} alt="" />
-              <span></span>
             </div>
             <div className="text">
               <h3>Anita Streicher</h3>
@@ -206,7 +201,6 @@ function Homepage() {
           <div className="box">
             <div className="img">
               <img src={R1} alt="" />
-              <span></span>
             </div>
             <div className="text">
               <h3>Thandi Ngubane</h3>
