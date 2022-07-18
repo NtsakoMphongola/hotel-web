@@ -73,3 +73,44 @@ a {
   font-size: 48px;
   border-radius: nullpx;
 }
+section .heading {
+  justify-content: center;
+} 
+.heading h1 {
+  background-color: burlywood;
+  justify-content: center;
+  font-size: 38px;
+  text-transform: uppercase;
+  margin: 5px;
+  padding: 20px;
+  box-shadow: 5px;
+  align-items: center;
+  text-align: center;
+}
+.page-top {
+  margin-top: 0;
+  background: #8CCCF0;
+}
+.mtop {
+  margin-top:0;
+}
+.offer img {
+  width: 50%;
+  height: 70%;
+  position: relative;
+}
+.offer .right {
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 0 0 3px rgb(0 0 0 / 5%);
+}
+.offer .content h4 {
+  font-size: 20px;
+}
+.offer .content h5 {
+  margin-bottom: 10px;
+}
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}

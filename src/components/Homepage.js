@@ -47,15 +47,15 @@ function Homepage() {
       </header>
     </section>
     <body className='page-top' data-spy="scroll" data-target=".navbar-fixed-top">
-      <section className="offer mtop" id="services">
+      <section className="offer mtop" id="services"> 
+      <div className="heading">
+        <h1>Check out our rooms </h1>
+      </div>
         <div className="container">
-          <div className="heading">
-            <h1>Check out Our Rooms </h1>
-          </div>
+         
           
           <div className="content grid2 mtop">
-            <div className="box flex">
-              <div className="left">
+             <div className="left">
                 <img src={D} alt="" />
               </div>
               <div className="right">
@@ -64,10 +64,7 @@ function Homepage() {
                 <h5>From R1 995 Per Room Per Night</h5>
                 <button className="flex1"> <span>View</span> </button>
               </div>
-            </div>
-            
-            <div className="box flex">
-              <div className="left">
+             <div className="left">
                 <img src={V} alt="" />
               </div>
               <div className="right">
@@ -75,10 +72,7 @@ function Homepage() {
                 <p> Exclusive with only 4 VIP Rooms. </p>
                 <h5>From R2 080 Per Room Per Night</h5>
                 <button className="flex1"> <span>View</span> </button>
-              </div>
-            </div>
-
-            <div className="box flex">
+              </div> 
               <div className="left">
                 <img src={L} alt="" />
               </div>
@@ -87,10 +81,8 @@ function Homepage() {
                 <p> Just 35 private luxury rooms ensures a quiet, relaxing stay. </p>
                 <h5>From R2 165 Per Room Per Night</h5>
                 <button className="flex1"> <span>View</span> </button>
-              </div>
-            </div>
+              </div> 
 
-            <div className="box flex">
               <div className="left">
                 <img src={LS} alt="" />
               </div>
@@ -100,7 +92,6 @@ function Homepage() {
                 <h5>From R2 575 Per Room Per Night</h5>
                 <button className="flex1"> <span>View</span> </button>
               </div>
-            </div>
           
           </div>
         </div>
@@ -109,7 +100,7 @@ function Homepage() {
     <section className="about" id="about">
       <div className="container">
         <div className="heading">
-          <h1>EXPLORE ABOUT US</h1>
+          <h1>Explore about us</h1>
         </div>
 
         <div className="content flex  top">
