@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from '../assets/logo.png';
+import './homepage.css';
 import D from '../assets/Deluxe.jpg';
 import V from '../assets/Vip.jpg';
 import L from '../assets/L.jpg';
@@ -14,15 +14,20 @@ import R4 from '../assets/reveiw/unnamed.png';
 import location from '../assets/map.png'
 
 const logoPic = new URL("../assets/logo.png", import.meta.url)
-
+const bgpic = new URL("../assets/Block6.jpg", import.meta.url)
 function Homepage() {
   return (
     <>
+    
     <section className='main-container'>
+      
       <header className='header'>
-        <div className='container flxe1'>
+        <div>
+          <img src={bgpic} className='bgpic' alt='Background pic' />
           <img src={logoPic} className='logo-img' alt='logo' />
-          <nav className="navbar flex1">
+        </div>
+        <div className=''>
+          <nav className="navbar">
             <ul className='nav-menu'>
               <a href="#Home">Home</a> 
               <a href="#about">About us</a> 
@@ -33,8 +38,11 @@ function Homepage() {
             </ul>
           </nav>
           <div className='motto'>
-            <h3>EXPERIENCE MPHONGOLA HOTEL A PLACE TO CHILL AND CELEBRATE </h3>
+            
           </div>
+          {/* <div className='motto'>
+            <h3>EXPERIENCE MPHONGOLA HOTEL A PLACE TO CHILL AND CELEBRATE </h3>
+          </div> */}
         </div>
       </header>
     </section>

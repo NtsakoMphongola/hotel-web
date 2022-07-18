@@ -7,3 +7,69 @@
   box-sizing: border-box;
   background: #8CCCF0;
 }
+.bgpic {
+  padding: 0;
+  margin: 0;
+  margin-left: 2px;
+  background-image: url("../assets/Block6.jpg");
+  width: auto;
+  z-index: 1;
+  opacity: 1;
+  overflow: hidden;
+}
+.header .logo-img {
+  padding: 1px;
+  position: relative;
+  width: 100px;
+  z-index: 1;
+  top: -1650px;
+}
+
+header ul {
+  float: right;
+  padding: 5px;
+  margin-top: 7px;
+  list-style: none;
+  display: flex;
+  opacity: 0.85;
+  background-color: transparent;
+}
+header ul a {
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+header ul  a:hover {
+  color: wheat
+}
+a {
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 36px;
+  padding: 10px;
+  margin-top: -50px;
+  transition: 0.5s;
+}
+
+.motto {
+  color: white;
+}
+.nav-menu {
+  padding: 25px;
+  position: relative;
+  top: -1700px;
+  z-index: 2;
+}
+.motto h3 {
+  position: relative;
+  width: 860px;
+  height: 178px;
+  left: 39px;
+  padding-top: 60%;
+  padding-left: 60px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  border-radius: nullpx;
+}
